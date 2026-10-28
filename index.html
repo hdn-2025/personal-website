@@ -4,428 +4,475 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Aerospace engineering portfolio showcasing spacecraft control, UAV fault-tolerant control, robotics, and micropropulsion projects.">
-
-    <title>Het Devang Naik | Personal Portfolio</title>
-
+    <meta name="description" content="Aerospace engineering, spacecraft control, robotics, UAV systems, and space propulsion portfolio.">
+    <title>Aerospace & Robotics | Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
-
 <body>
 
-    <header class="site-header">
-        <nav class="navbar container" aria-label="Main navigation">
-            <a href="#home" class="logo" aria-label="Home">
-                AE<span>.</span>
-            </a>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">AERO<span>.</span></a>
 
-            <button
-                class="menu-toggle"
-                id="menu-toggle"
-                type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="nav-links"
-            >
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nav-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <div class="nav-links" id="nav-links">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact" class="nav-contact">Contact</a>
-            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact" class="nav-contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
+        <section class="hero section" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">AEROSPACE ENGINEERING · AUTOMATION · ROBOTICS</p>
 
-        <!-- Home -->
-        <section class="hero container" id="home">
+                    <h1>Engineering intelligent systems for <span>space and beyond.</span></h1>
 
-            <div class="hero-content">
-                <p class="eyebrow">AEROSPACE ENGINEERING · ROBOTICS</p>
+                    <p class="hero-description">
+                        I am an aerospace engineering graduate pursuing advanced
+                        studies in automation and robotics, with interests in
+                        spacecraft dynamics, optimal control, UAV systems,
+                        and space propulsion.
+                    </p>
 
-                <h1>
-                    Engineering ideas.<br>
-                    <span>Building possibilities.</span>
-                </h1>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="button button-primary">
+                            Explore My Projects
+                        </a>
+                        <a href="#contact" class="button button-outline">
+                            Get in Touch
+                        </a>
+                    </div>
 
-                <p class="hero-description">
-                    Aerospace Engineer with a background in spacecraft
-                    dynamics and control systems, currently pursuing
-                    advanced studies in Automation and Robotics.
-                    Interested in autonomous systems, UAV control,
-                    and space technologies.
-                </p>
-
-                <div class="hero-buttons">
-                    <a href="#projects" class="button primary-button">
-                        Explore Projects <span aria-hidden="true">↗</span>
-                    </a>
-
-                    <a href="#contact" class="button secondary-button">
-                        Get in Touch
-                    </a>
+                    <div class="hero-focus">
+                        <div>
+                            <strong>01</strong>
+                            <span>Space Systems</span>
+                        </div>
+                        <div>
+                            <strong>02</strong>
+                            <span>Control Engineering</span>
+                        </div>
+                        <div>
+                            <strong>03</strong>
+                            <span>Robotics & UAVs</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="hero-highlights">
-                    <div>
-                        <strong>Space</strong>
-                        <span>Systems & Dynamics</span>
+                <div class="hero-visual">
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="orbit orbit-three"></div>
+
+                    <div class="planet">
+                        <div class="planet-highlight"></div>
                     </div>
 
-                    <div>
-                        <strong>Control</strong>
-                        <span>Modelling & Simulation</span>
+                    <div class="satellite">
+                        <div class="satellite-body"></div>
+                        <div class="solar-panel panel-left"></div>
+                        <div class="solar-panel panel-right"></div>
+                        <div class="satellite-antenna"></div>
                     </div>
 
-                    <div>
-                        <strong>Robotics</strong>
-                        <span>UAVs & Autonomy</span>
+                    <div class="visual-label">
+                        <span class="status-dot"></span>
+                        EXPLORING ENGINEERING FRONTIERS
                     </div>
                 </div>
             </div>
 
-            <div class="hero-visual" aria-label="Abstract orbital illustration">
-                <div class="visual-label visual-label-top">
-                    ENGINEERING / 01
-                </div>
-
-                <div class="orbit orbit-one"></div>
-                <div class="orbit orbit-two"></div>
-                <div class="orbit orbit-three"></div>
-
-                <div class="planet">
-                    <span>AE</span>
-                </div>
-
-                <span class="orbit-dot dot-one"></span>
-                <span class="orbit-dot dot-two"></span>
-
-                <div class="visual-caption">
-                    <span class="caption-line"></span>
-                    <span>DESIGN · ANALYSE · INNOVATE</span>
-                </div>
+            <div class="container hero-bottom">
+                <span>SPACECRAFT DYNAMICS</span>
+                <span>OPTIMAL CONTROL</span>
+                <span>UAV SYSTEMS</span>
+                <span>SPACE PROPULSION</span>
             </div>
-
         </section>
 
-        <!-- About -->
-        <section class="section container" id="about">
+        <section class="section section-light" id="about">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">01 / ABOUT</p>
+                    <h2>Curiosity backed by engineering.</h2>
+                </div>
 
-            <div class="section-heading">
-                <p class="eyebrow">01 / ABOUT ME</p>
-                <h2>Curiosity meets engineering.</h2>
+                <div class="about-grid">
+                    <div class="about-intro">
+                        <h3>From aerospace fundamentals to intelligent systems.</h3>
+                    </div>
+
+                    <div class="about-text">
+                        <p>
+                            With a background in Aerospace Engineering and
+                            postgraduate studies in Automation and Robotics,
+                            I am interested in understanding, modelling, and
+                            controlling complex engineering systems.
+                        </p>
+
+                        <p>
+                            My academic work includes LQR-based spacecraft
+                            station-keeping control, research related to
+                            fault-tolerant control of multirotor UAVs, and the
+                            design of a solid-propellant microthruster for
+                            small spacecraft.
+                        </p>
+
+                        <p>
+                            I aim to develop practical engineering solutions
+                            through mathematical modelling, simulation,
+                            control theory, and computational tools.
+                        </p>
+
+                        <a href="#education" class="text-link">
+                            Explore my academic background →
+                        </a>
+                    </div>
+                </div>
             </div>
-
-            <div class="about-content">
-                <p class="section-description">
-                    My academic background in Aerospace Engineering and
-                    ongoing M.Tech studies in Automation and Robotics
-                    have shaped my interest in the design, modelling,
-                    and control of complex engineering systems.
-                </p>
-
-                <p class="section-description">
-                    My project experience includes LQR-based spacecraft
-                    station-keeping control, research into fault-tolerant
-                    control for multirotor UAVs, and solid-propellant
-                    microthruster design for small spacecraft.
-                </p>
-            </div>
-
         </section>
 
-        <!-- Projects -->
-        <section class="projects-section" id="projects">
-
-            <div class="container section">
-
+        <section class="section" id="projects">
+            <div class="container">
                 <div class="section-heading">
                     <p class="eyebrow">02 / SELECTED WORK</p>
-                    <h2>Projects & Research</h2>
+                    <h2>Projects & research.</h2>
                     <p class="section-description">
-                        Engineering applications across spacecraft
-                        control, autonomous flight, and space propulsion.
+                        Academic projects exploring spacecraft control,
+                        autonomous aerial systems, and small-spacecraft propulsion.
                     </p>
                 </div>
 
                 <div class="project-grid">
-
-                    <!-- Project 1 -->
                     <article class="project-card">
-
-                        <div class="project-topline">
+                        <div class="project-top">
                             <span class="project-number">PROJECT 01</span>
-                            <span class="project-symbol" aria-hidden="true">↗</span>
+                            <span class="project-type">SPACE SYSTEMS</span>
                         </div>
 
-                        <h3>
-                            LQR-Based Spacecraft Station-Keeping Control
-                        </h3>
-
-                        <p class="project-institution">
-                            ISRO–SAC · Ahmedabad
-                        </p>
-
-                        <p class="project-description">
-                            Modelling, simulation, and Linear Quadratic
-                            Regulator (LQR) design for spacecraft
-                            station-keeping, focusing on optimal control
-                            and spacecraft dynamics.
-                        </p>
-
-                        <div class="tags">
-                            <span class="tag">LQR Control</span>
-                            <span class="tag">MATLAB</span>
-                            <span class="tag">Spacecraft Dynamics</span>
+                        <div class="project-visual space-visual">
+                            <div class="mini-orbit"></div>
+                            <div class="mini-satellite">✦</div>
+                            <span class="visual-caption">ORBITAL CONTROL</span>
                         </div>
 
+                        <div class="project-content">
+                            <p class="project-institution">ISRO – SAC · AHMEDABAD</p>
+                            <h3>LQR-Based Spacecraft Station-Keeping Control</h3>
+
+                            <p>
+                                Modelling and simulation of spacecraft station-keeping
+                                dynamics, with a focus on Linear Quadratic Regulator
+                                (LQR) design and optimal control.
+                            </p>
+
+                            <div class="tag-list">
+                                <span>LQR Control</span>
+                                <span>MATLAB</span>
+                                <span>Spacecraft Dynamics</span>
+                            </div>
+                        </div>
                     </article>
 
-                    <!-- Project 2 -->
                     <article class="project-card">
-
-                        <div class="project-topline">
+                        <div class="project-top">
                             <span class="project-number">PROJECT 02</span>
-                            <span class="project-symbol" aria-hidden="true">↗</span>
+                            <span class="project-type">UAV RESEARCH</span>
                         </div>
 
-                        <h3>
-                            Hybrid Reinforcement Learning-Based
-                            Fault-Tolerant Control for Multirotor UAVs
-                        </h3>
-
-                        <p class="project-institution">
-                            DIAT (DRDO) · Pune
-                        </p>
-
-                        <p class="project-description">
-                            Research focused on actuator-fault conditions
-                            in multirotor UAVs, exploring hybrid
-                            reinforcement learning-based fault-tolerant
-                            control, delay resilience, and experimentally
-                            validated safe flight.
-                        </p>
-
-                        <div class="tags">
-                            <span class="tag">Reinforcement Learning</span>
-                            <span class="tag">Fault-Tolerant Control</span>
-                            <span class="tag">UAV Systems</span>
+                        <div class="project-visual uav-visual">
+                            <div class="uav-symbol">
+                                <span class="uav-center"></span>
+                                <span class="uav-arm arm-one"></span>
+                                <span class="uav-arm arm-two"></span>
+                                <span class="uav-arm arm-three"></span>
+                                <span class="uav-arm arm-four"></span>
+                            </div>
+                            <span class="visual-caption">AUTONOMOUS FLIGHT</span>
                         </div>
 
+                        <div class="project-content">
+                            <p class="project-institution">DIAT · DRDO · PUNE</p>
+                            <h3>Hybrid Reinforcement Learning-Based Fault-Tolerant Control for Multirotor UAVs</h3>
+
+                            <p>
+                                Research on fault-tolerant control strategies for
+                                multirotor UAVs under actuator faults, including
+                                hybrid reinforcement learning approaches and
+                                resilience to control delays.
+                            </p>
+
+                            <div class="tag-list">
+                                <span>Reinforcement Learning</span>
+                                <span>Fault-Tolerant Control</span>
+                                <span>UAV Systems</span>
+                            </div>
+                        </div>
                     </article>
 
-                    <!-- Project 3 -->
                     <article class="project-card">
-
-                        <div class="project-topline">
-                            <span class="project-number">PROJECT 03 · MAJOR PROJECT</span>
-                            <span class="project-symbol" aria-hidden="true">↗</span>
+                        <div class="project-top">
+                            <span class="project-number">PROJECT 03</span>
+                            <span class="project-type">MAJOR PROJECT</span>
                         </div>
 
-                        <h3>
-                            Design of a Solid-Propellant Microthruster
-                            for Small Spacecraft
-                        </h3>
-
-                        <p class="project-institution">
-                            UPES
-                        </p>
-
-                        <p class="project-description">
-                            Investigation of solid-propellant
-                            microthruster design and performance
-                            optimisation for small spacecraft applications,
-                            including propulsion architecture and simulation.
-                        </p>
-
-                        <div class="tags">
-                            <span class="tag">Space Propulsion</span>
-                            <span class="tag">Propellant Performance</span>
-                            <span class="tag">Simulation</span>
+                        <div class="project-visual propulsion-visual">
+                            <div class="thrust-core"></div>
+                            <div class="thrust-flame"></div>
+                            <span class="visual-caption">MICRO-PROPULSION</span>
                         </div>
 
+                        <div class="project-content">
+                            <p class="project-institution">UPES · DEHRADUN</p>
+                            <h3>Design of a Solid-Propellant Microthruster for Small Spacecraft</h3>
+
+                            <p>
+                                Investigation of microthruster architecture and
+                                solid-propellant performance for small spacecraft,
+                                with an emphasis on propulsion design,
+                                performance optimisation, and simulation.
+                            </p>
+
+                            <div class="tag-list">
+                                <span>Space Propulsion</span>
+                                <span>Propellant Performance</span>
+                                <span>Simulation</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="project-note">
+                    Project descriptions can be refined to reflect your exact
+                    individual contributions, methods, and results.
+                </p>
+            </div>
+        </section>
+
+        <section class="section section-light" id="education">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">03 / EDUCATION</p>
+                    <h2>Academic foundation.</h2>
+                </div>
+
+                <div class="education-list">
+                    <article class="education-item">
+                        <div class="education-marker">01</div>
+                        <div class="education-content">
+                            <p class="education-level">POSTGRADUATE · CURRENT</p>
+                            <h3>Master of Technology (M.Tech) in Automation and Robotics</h3>
+                            <p class="education-institution">
+                                Defence Institute of Advanced Technology (DIAT),
+                                DRDO, Pune, India
+                            </p>
+                            <p>
+                                Focus areas include automation, robotics,
+                                intelligent systems, and control engineering.
+                            </p>
+                        </div>
+                        <span class="education-date">In Progress</span>
+                    </article>
+
+                    <article class="education-item">
+                        <div class="education-marker">02</div>
+                        <div class="education-content">
+                            <p class="education-level">UNDERGRADUATE · COMPLETED</p>
+                            <h3>Bachelor of Technology (B.Tech) in Aerospace Engineering</h3>
+                            <p class="education-institution">
+                                University of Petroleum and Energy Studies (UPES),
+                                Dehradun, India
+                            </p>
+                            <p>
+                                Academic foundation in aerospace systems,
+                                flight mechanics, spacecraft dynamics,
+                                propulsion, and engineering analysis.
+                            </p>
+                        </div>
+                        <span class="education-date">Completed 2024</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="certificates">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">04 / PROFESSIONAL DEVELOPMENT</p>
+                    <h2>Certificates & credentials.</h2>
+                    <p class="section-description">
+                        A collection of completed courses, technical training,
+                        workshops, and professional certifications.
+                    </p>
+                </div>
+
+                <div class="certificate-grid">
+
+                    <!-- CERTIFICATE 1: Replace the example details below. -->
+                    <article class="certificate-card">
+                        <div class="certificate-icon">
+                            <span>01</span>
+                        </div>
+                        <div class="certificate-content">
+                            <p class="certificate-category">TECHNICAL CERTIFICATE</p>
+                            <h3>Certificate Title</h3>
+                            <p class="certificate-issuer">Issuing Organisation</p>
+                            <p class="certificate-date">Year of Completion</p>
+                            <a class="text-link certificate-link"
+                               href="#contact"
+                               aria-label="Add certificate verification link">
+                                Add certificate link →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- CERTIFICATE 2: Duplicate this card for more certificates. -->
+                    <article class="certificate-card">
+                        <div class="certificate-icon">
+                            <span>02</span>
+                        </div>
+                        <div class="certificate-content">
+                            <p class="certificate-category">ONLINE COURSE</p>
+                            <h3>Course or Training Title</h3>
+                            <p class="certificate-issuer">Issuing Organisation</p>
+                            <p class="certificate-date">Year of Completion</p>
+                            <a class="text-link certificate-link"
+                               href="#contact"
+                               aria-label="Add certificate verification link">
+                                Add certificate link →
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- CERTIFICATE 3: Duplicate this card for more certificates. -->
+                    <article class="certificate-card">
+                        <div class="certificate-icon">
+                            <span>03</span>
+                        </div>
+                        <div class="certificate-content">
+                            <p class="certificate-category">WORKSHOP / TRAINING</p>
+                            <h3>Workshop or Training Title</h3>
+                            <p class="certificate-issuer">Issuing Organisation</p>
+                            <p class="certificate-date">Year of Completion</p>
+                            <a class="text-link certificate-link"
+                               href="#contact"
+                               aria-label="Add certificate verification link">
+                                Add certificate link →
+                            </a>
+                        </div>
                     </article>
 
                 </div>
 
+                <p class="certificate-note">
+                    Replace these placeholders with your actual certificates.
+                    Link to a public certificate verification page or a PDF
+                    that you have uploaded to your repository.
+                </p>
             </div>
-
         </section>
 
-        <!-- Education -->
-        <section class="section container" id="education">
-
-            <div class="section-heading">
-                <p class="eyebrow">03 / EDUCATION</p>
-                <h2>Academic background</h2>
-            </div>
-
-            <div class="education-list">
-
-                <article class="education-item">
-                    <div class="education-marker"></div>
-
-                    <div class="education-details">
-                        <p class="education-level">
-                            POSTGRADUATE
-                        </p>
-
-                        <h3>
-                            M.Tech in Automation and Robotics
-                        </h3>
-
-                        <p class="education-description">
-                            Focus areas include automation, robotics,
-                            control systems, and intelligent systems.
-                        </p>
-                    </div>
-                </article>
-
-                <article class="education-item">
-                    <div class="education-marker"></div>
-
-                    <div class="education-details">
-                        <p class="education-level">
-                            UNDERGRADUATE
-                        </p>
-
-                        <h3>
-                            B.Tech in Aerospace Engineering
-                        </h3>
-
-                        <p class="education-description">
-                            Foundation in aerospace systems, flight
-                            mechanics, spacecraft dynamics, and
-                            engineering analysis.
-                        </p>
-                    </div>
-                </article>
-
-            </div>
-
-        </section>
-
-        <!-- Skills -->
-        <section class="skills-section" id="skills">
-
-            <div class="container section">
-
+        <section class="section section-light" id="skills">
+            <div class="container">
                 <div class="section-heading">
-                    <p class="eyebrow">04 / TECHNICAL PROFILE</p>
-                    <h2>Areas of interest & skills</h2>
+                    <p class="eyebrow">05 / TECHNICAL EXPERTISE</p>
+                    <h2>Engineering toolkit.</h2>
                 </div>
 
                 <div class="skills-grid">
-
-                    <article class="skill-group">
-                        <h3>Aerospace</h3>
-                        <div class="skills-list">
-                            <span>Flight Dynamics</span>
-                            <span>Spacecraft Dynamics</span>
-                            <span>Space Propulsion</span>
-                            <span>UAV Systems</span>
-                        </div>
+                    <article class="skill-card">
+                        <span class="skill-index">01</span>
+                        <h3>Aerospace Systems</h3>
+                        <ul>
+                            <li>Flight Dynamics</li>
+                            <li>Spacecraft Dynamics</li>
+                            <li>Space Propulsion</li>
+                            <li>Orbital Mechanics</li>
+                        </ul>
                     </article>
 
-                    <article class="skill-group">
+                    <article class="skill-card">
+                        <span class="skill-index">02</span>
                         <h3>Control & Robotics</h3>
-                        <div class="skills-list">
-                            <span>Optimal Control</span>
-                            <span>LQR</span>
-                            <span>Fault-Tolerant Control</span>
-                            <span>Reinforcement Learning</span>
-                            <span>Robotics</span>
-                        </div>
+                        <ul>
+                            <li>Optimal Control</li>
+                            <li>Linear Quadratic Regulator (LQR)</li>
+                            <li>Fault-Tolerant Control</li>
+                            <li>Robotics & UAV Systems</li>
+                        </ul>
                     </article>
 
-                    <article class="skill-group">
+                    <article class="skill-card">
+                        <span class="skill-index">03</span>
                         <h3>Computational Tools</h3>
-                        <div class="skills-list">
-                            <span>MATLAB</span>
-                            <span>Python</span>
-                            <span>Modelling</span>
-                            <span>Simulation</span>
-                            <span>Numerical Optimisation</span>
-                        </div>
+                        <ul>
+                            <li>MATLAB</li>
+                            <li>Python</li>
+                            <li>Modelling & Simulation</li>
+                            <li>Numerical Optimisation</li>
+                        </ul>
                     </article>
+                </div>
+            </div>
+        </section>
 
+        <section class="section contact-section" id="contact">
+            <div class="container contact-grid">
+                <div>
+                    <p class="eyebrow">06 / CONTACT</p>
+                    <h2>Let's connect and build something meaningful.</h2>
+                    <p>
+                        Open to conversations about aerospace engineering,
+                        spacecraft control, robotics, UAVs, and relevant
+                        research or career opportunities.
+                    </p>
                 </div>
 
+                <div class="contact-links">
+                    <!-- Replace these placeholders with your real details. -->
+                    <a href="mailto:YOUR_EMAIL@example.com" class="contact-link">
+                        <span>Email</span>
+                        <span>Get in touch ↗</span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/" target="_blank"
+                       rel="noopener noreferrer" class="contact-link">
+                        <span>LinkedIn</span>
+                        <span>Connect professionally ↗</span>
+                    </a>
+
+                    <a href="https://github.com/" target="_blank"
+                       rel="noopener noreferrer" class="contact-link">
+                        <span>GitHub</span>
+                        <span>Explore my code ↗</span>
+                    </a>
+                </div>
             </div>
-
         </section>
-
-        <!-- Contact -->
-        <section class="section container contact-section" id="contact">
-
-            <p class="eyebrow">05 / CONTACT</p>
-
-            <h2>
-                Let's build something<br>
-                <span>meaningful.</span>
-            </h2>
-
-            <p class="section-description">
-                Interested in aerospace engineering, spacecraft control,
-                robotics, and autonomous systems? Let's connect.
-            </p>
-
-            <div class="contact-buttons">
-                <a
-                    href="mailto:your.email@example.com"
-                    class="button primary-button"
-                    id="email-link"
-                >
-                    Email Me <span aria-hidden="true">↗</span>
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/"
-                    class="button secondary-button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn
-                </a>
-
-                <a
-                    href="https://github.com/"
-                    class="button secondary-button"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub
-                </a>
-            </div>
-
-            <p class="contact-note">
-                Replace the example contact links with your own details.
-            </p>
-
-        </section>
-
     </main>
 
-    <footer class="site-footer">
+    <footer class="footer">
         <div class="container footer-content">
-            <a href="#home" class="logo">AE<span>.</span></a>
-
-            <p>
-                Aerospace Engineering · Robotics · Control Systems
-            </p>
-
-            <a href="#home" class="back-to-top">
-                Back to top ↑
-            </a>
+            <a href="#home" class="logo">AERO<span>.</span></a>
+            <p>Designed with curiosity. Built with engineering.</p>
+            <p>© <span id="current-year"></span> Personal Portfolio</p>
         </div>
     </footer>
 
